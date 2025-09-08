@@ -1,1 +1,39 @@
-
+[
+      {
+          "summary": "MFA not prompting on Teams",
+              "severity": "P3",
+                  "status": "Open",
+                      "user": "alice@acme.com"
+                        },
+                          {
+                              "summary": "POS terminal 4 contactless failing",
+                                  "severity": "P2",
+                                      "status": "In Progress",
+                                          "user": "store.ops"
+                                            },
+                                              {
+                                                  "summary": "VPN connects but no internet",
+                                                      "severity": "P2",
+                                                          "status": "Open",
+                                                              "user": "bob@acme.com"
+                                                                },
+                                                                  {
+                                                                      "summary": "Outlook search not indexing",
+                                                                          "severity": "P3",
+                                                                              "status": "Resolved",
+                                                                                  "user": "chris@acme.com"
+                                                                                    },
+                                                                                      {
+                                                                                          "summary": "Password expired - can not login",
+                                                                                              "severity": "P3",
+                                                                                                  "status": "Open",
+                                                                                                      "user": "dave@acme.com"
+                                                                                                        },
+                                                                                                          {
+                                                                                                              "summary": "SharePoint 403 on shared site",
+                                                                                                                  "severity": "P2",
+                                                                                                                      "status": "Open",
+                                                                                                                          "user": "eve@acme.com"
+                                                                                                                            }
+                                                                                                                            ]
+]
