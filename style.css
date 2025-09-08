@@ -1,0 +1,12 @@
+*{box-sizing:border-box}body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#0b1222;color:#e9eef7;margin:0}
+header{padding:18px 16px;border-bottom:1px solid #26314d;background:linear-gradient(180deg,#0f1930,#0b1222)}h1{margin:0}.tagline{opacity:.85;margin:.3rem 0 0}
+.tabs{display:flex;gap:10px;padding:10px 16px;border-bottom:1px solid #26314d;background:#0f1930;position:sticky;top:0}
+.tabs button{background:#17213a;border:1px solid #2a3a66;color:#e9eef7;padding:8px 12px;border-radius:8px;cursor:pointer}.tabs button.active{background:#21406b}
+main{padding:16px;max-width:1000px;margin:0 auto}.controls{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+input,select,button{background:#0e1a33;color:#e9eef7;border:1px solid #2a3a66;border-radius:8px;padding:8px}
+.list{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}.card{border:1px solid #2a3a66;background:#0e1a33;border-radius:12px;padding:12px;margin:0 0 12px}
+.item{border:1px solid #2a3a66;border-radius:12px;background:#0e1a33;padding:12px}.item h4{margin:0 0 8px}
+.badge{display:inline-block;padding:2px 8px;border-radius:999px;background:#1b2b4d;border:1px solid #2a3a66;font-size:12px;margin-right:6px}
+.tab{display:none}.tab.active{display:block}.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.msg{color:#9be7a2}
+.kblist{margin:0;padding-left:18px}.terminal{background:#07101d;border:1px solid #223052;border-radius:8px;padding:10px;min-height:80px;overflow:auto}
+footer{padding:20px 16px;border-top:1px solid #26314d;opacity:.8;text-align:center}
