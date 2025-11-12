@@ -16,14 +16,14 @@ Vanilla JS flows to practice **L1 support** scenarios:
 
 ## Handover template (copy into your ticket)
 
-User:
-Ticket ID:
-Impact/Priority:
-Issue summary (1 line):
-Repro steps:
-What I tried (+ timestamps):
-Attachments:
-Why escalated (policy/permission boundary):
+- User:
+- Ticket ID:
+- Impact/Priority:
+- Issue summary (1 line):
+- Repro steps:
+- What I tried (+ timestamps):
+- Attachments:
+- Why escalated (policy/permission boundary):
 
 
 
