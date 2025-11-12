@@ -5,7 +5,7 @@ Vanilla JS flows to practice **L1 support** scenarios:
 - Mailbox access triage (permissions/quota)
 - Device checks (network/printer)
 
-**Live demo:** <(https://devsharma31.github.io/service-desk-toolkit/)>
+**Live demo:** (https://devsharma31.github.io/service-desk-toolkit/)
 
 ## Try it online
 1) Open the live link above.
