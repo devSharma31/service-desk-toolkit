@@ -1,4 +1,4 @@
-# Service Desk Toolkit (L1 Support Flows))
+# Service Desk Toolkit (L1 Support Flows)
 
 Vanilla JS flows to practice **L1 support** scenarios:
 - Password reset & MFA prompts
