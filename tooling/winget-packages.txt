@@ -1,6 +1,5 @@
 ### `tooling/winget-packages.txt`
 
-```text
 # Winget package IDs for a typical IT Support workstation
 
 # Browsers
