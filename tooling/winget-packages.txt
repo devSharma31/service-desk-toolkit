@@ -1,1 +1,22 @@
+### `tooling/winget-packages.txt`
+
+```text
+# Winget package IDs for a typical IT Support workstation
+
+# Browsers
+Microsoft.Edge
+Google.Chrome
+
+# Collaboration
+Microsoft.Teams
+SlackTechnologies.Slack
+
+# Utilities
+Notepad++.Notepad++
+7zip.7zip
+WiresharkFoundation.Wireshark
+
+# Remote Support
+AnyDeskSoftwareGmbH.AnyDesk
+TeamViewer.TeamViewer
 
