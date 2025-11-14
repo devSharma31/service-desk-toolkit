@@ -1,33 +1,95 @@
-# Service Desk Toolkit (L1 Support Flows)
+# Service Desk Toolkit — L1/L2 SOPs • Runbooks • Scripts (Windows & M365)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-5391FE?logo=powershell&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-10%2F11-blue)
+![M365](https://img.shields.io/badge/Microsoft%20365-Admin-DB3B3B?logo=microsoft)
+![Azure AD](https://img.shields.io/badge/Azure%20AD-Basics-0078D4?logo=microsoftazure&logoColor=white)
 
-Vanilla JS flows to practice **L1 support** scenarios:
-- Password reset & MFA prompts
-- Mailbox access triage (permissions/quota)
-- Device checks (network/printer)
+Front-line **Service Desk Knowledge Base** with safe automation and incident playbooks.  
+**Live KB:** https://devsharma31.github.io/service-desk-toolkit/
 
-**Live demo:** https://devsharma31.github.io/service-desk-toolkit/
+> What this proves: I can **triage**, **communicate** clearly, and **automate** safely in L1/L2 environments across Windows 10/11 and Microsoft 365/Azure AD.
 
-## Try it online
-1) Open the live link above.
-2) Pick a flow (e.g., Password Reset).
-3) Follow the on-screen checklist and note outcomes.
+---
 
+## Contents
+- **sops/** — front-line procedures (password reset, Outlook profile, printer/VPN, ticket triage)
+- **runbooks/** — incident guides (Exchange Online outage, network degradation) + SEV handoff template
+- **scripts/** — safe PowerShell & Bash helpers (connectivity, network reset with `-Confirm`, M365 user audit, disk cleanup)
+- **labs/** — practice flows (M365 user lifecycle, Azure AD basics, Windows troubleshooting)
+- **tooling/** — `winget`/Chocolatey bootstrap lists
+- **index.html + app.js + style.css** — a lightweight KB UI (GitHub Pages-ready)
 
+---
 
-## Handover template (copy into your ticket)
+## Quickstart
+
+### Run a connectivity check (PowerShell, Windows)
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+.\scripts\powershell\Check-Connectivity.ps1 -Target "outlook.office365.com"
+# Optional: network reset (approval switch required)
+.\scripts\powershell\Reset-Network.ps1 -Confirm
+# Service Desk Toolkit — L1/L2 SOPs • Runbooks • Scripts (Windows & M365)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-5391FE?logo=powershell&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-10%2F11-blue)
+![M365](https://img.shields.io/badge/Microsoft%20365-Admin-DB3B3B?logo=microsoft)
+![Azure AD](https://img.shields.io/badge/Azure%20AD-Basics-0078D4?logo=microsoftazure&logoColor=white)
+```
+---
+Front-line **Service Desk Knowledge Base** with safe automation and incident playbooks.  
+**Live KB:** https://devsharma31.github.io/service-desk-toolkit/
+
+> What this proves: I can **triage**, **communicate** clearly, and **automate** safely in L1/L2 environments across Windows 10/11 and Microsoft 365/Azure AD.
+
+---
+
+## Contents
+- **sops/** — front-line procedures (password reset, Outlook profile, printer/VPN, ticket triage)
+- **runbooks/** — incident guides (Exchange Online outage, network degradation) + SEV handoff template
+- **scripts/** — safe PowerShell & Bash helpers (connectivity, network reset with `-Confirm`, M365 user audit, disk cleanup)
+- **labs/** — practice flows (M365 user lifecycle, Azure AD basics, Windows troubleshooting)
+- **tooling/** — `winget`/Chocolatey bootstrap lists
+- **index.html + app.js + style.css** — a lightweight KB UI (GitHub Pages-ready)
+
+---
+
+## Quickstart
+
+### Run a connectivity check (PowerShell, Windows)
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+.\scripts\powershell\Check-Connectivity.ps1 -Target "outlook.office365.com"
+# Optional: network reset (approval switch required)
+.\scripts\powershell\Reset-Network.ps1 -Confirm
+```
+
+DNS lookup (Bash, WSL/macOS/Linux):
+```
+bash scripts/bash/check_dns.sh outlook.office365.com
+```
+
+Open the UI
+
+- Local: open index.html
+- GitHub Pages: the Live KB link above
+
+---
+
+## Safety
+
+Scripts are read-only or reversible by default. Any disruptive action requires an explicit -Confirm.
+
+---
+
+## Handover Template (paste into the ticket)
 
 - User:
 - Ticket ID:
 - Impact/Priority:
-- Issue summary (1 line):
+- Summary (1 line):
 - Repro steps:
-- What I tried (+ timestamps):
+- What I tried (+ timestamps)
 - Attachments:
 - Why escalated (policy/permission boundary):
-
-
-
-## Topics
-service-desk • support • kb • triage • m365 • azure-ad
-
-> For deeper SOPs + PowerShell scripts, see the **IT-Support-KB** repo (separate).
