@@ -22,36 +22,10 @@ Front-line **Service Desk Knowledge Base** with safe automation and incident pla
 
 ---
 
-## Quickstart
-
-### Run a connectivity check (PowerShell, Windows)
-```powershell
-Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
-.\scripts\powershell\Check-Connectivity.ps1 -Target "outlook.office365.com"
-# Optional: network reset (approval switch required)
-.\scripts\powershell\Reset-Network.ps1 -Confirm
-# Service Desk Toolkit — L1/L2 SOPs • Runbooks • Scripts (Windows & M365)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-5391FE?logo=powershell&logoColor=white)
-![Windows](https://img.shields.io/badge/Windows-10%2F11-blue)
-![M365](https://img.shields.io/badge/Microsoft%20365-Admin-DB3B3B?logo=microsoft)
-![Azure AD](https://img.shields.io/badge/Azure%20AD-Basics-0078D4?logo=microsoftazure&logoColor=white)
-```
----
 Front-line **Service Desk Knowledge Base** with safe automation and incident playbooks.  
 **Live KB:** https://devsharma31.github.io/service-desk-toolkit/
 
 > What this proves: I can **triage**, **communicate** clearly, and **automate** safely in L1/L2 environments across Windows 10/11 and Microsoft 365/Azure AD.
-
----
-
-## Contents
-- **sops/** — front-line procedures (password reset, Outlook profile, printer/VPN, ticket triage)
-- **runbooks/** — incident guides (Exchange Online outage, network degradation) + SEV handoff template
-- **scripts/** — safe PowerShell & Bash helpers (connectivity, network reset with `-Confirm`, M365 user audit, disk cleanup)
-- **labs/** — practice flows (M365 user lifecycle, Azure AD basics, Windows troubleshooting)
-- **tooling/** — `winget`/Chocolatey bootstrap lists
-- **index.html + app.js + style.css** — a lightweight KB UI (GitHub Pages-ready)
 
 ---
 
