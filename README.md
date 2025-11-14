@@ -77,7 +77,7 @@ Goal: clean, auditable handover so L2/L3 doesn’t need to reverse-engineer what
 
 ---
 
-About / Tech Stack
+## About / Tech Stack
 
 - Tech: HTML, CSS, Vanilla JavaScript, PowerShell, Bash
 - Platform focus:
@@ -85,7 +85,7 @@ About / Tech Stack
     - Microsoft 365 (Exchange Online, basic admin)
     - Azure AD basics
 - Hosting: GitHub Pages
-
+---
 This project is part of my journey towards IT Support / Cloud Support roles with a strong focus on:
 - Structured triage 
 - Clear written communication
