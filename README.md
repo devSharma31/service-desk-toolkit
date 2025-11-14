@@ -53,7 +53,12 @@ Open the UI
 
 ## Safety
 
-Scripts are read-only or reversible by default. Any disruptive action requires an explicit -Confirm.
+Scripts are:
+- Read-only or reversible by default.
+- Any disruptive action requires an explicit -Confirm.
+- Intended for lab / training use before touching production.
+
+This mirrors real-world guardrails in enterprise environments.
 
 ---
 
@@ -67,3 +72,21 @@ Scripts are read-only or reversible by default. Any disruptive action requires a
 - What I tried (+ timestamps)
 - Attachments:
 - Why escalated (policy/permission boundary):
+
+Goal: clean, auditable handover so L2/L3 doesn’t need to reverse-engineer what happened.
+
+---
+
+About / Tech Stack
+
+- Tech: HTML, CSS, Vanilla JavaScript, PowerShell, Bash
+- Platform focus:
+    - Windows 10/11
+    - Microsoft 365 (Exchange Online, basic admin)
+    - Azure AD basics
+- Hosting: GitHub Pages
+
+This project is part of my journey towards IT Support / Cloud Support roles with a strong focus on:
+- Structured triage 
+- Clear written communication
+- Safe, reversible automation
