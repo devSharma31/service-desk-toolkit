@@ -1,6 +1,4 @@
-### `tooling/winget-packages.txt`
-
-# Winget package IDs for a typical IT Support workstation
+## Winget package IDs for a typical IT Support workstation
 
 # Browsers
 Microsoft.Edge
