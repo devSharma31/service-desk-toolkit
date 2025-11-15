@@ -1,35 +1,39 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Service Desk Toolkit</title><link rel="stylesheet" href="style.css"></head>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Service Desk Toolkit — KB</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Marked.js (Markdown renderer) & Highlight.js (code highlight) -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+</head>
 <body>
-<header><h1>Service Desk Toolkit</h1><p class="tagline">Incident triage • Password reset • Network check</p></header>
-<nav class="tabs"><button data-tab="incidents" class="active">Incidents</button><button data-tab="reset">Password Reset</button><button data-tab="network">Network Check</button></nav>
-<main>
-<section id="incidents" class="tab active">
-<div class="controls">
-  <input id="q" placeholder="Search summary or user...">
-  <select id="sev"><option value="">All severities</option><option>P1</option><option>P2</option><option>P3</option></select>
-  <select id="status"><option value="">All status</option><option>Open</option><option>In Progress</option><option>Resolved</option></select>
-</div>
-<div id="list" class="list"></div>
-</section>
-<section id="reset" class="tab">
-<form id="resetForm" class="card">
-  <h3>Password Reset Workflow</h3>
-  <label>Username or Email <input id="user" required></label>
-  <label>Verification (last 4 digits of phone) <input id="verify" required pattern="\d{4}" maxlength="4"></label>
-  <label>Reason <input id="reason" placeholder="Locked out / expired / MFA reset"></label>
-  <div class="row"><button type="submit">Create Reset Ticket</button><span id="resetMsg" class="msg"></span></div>
-</form>
-<div class="card"><h3>Generated Tickets (local)</h3><ul id="genTickets" class="kblist"></ul></div>
-</section>
-<section id="network" class="tab">
-<div class="card"><h3>Quick Network Check</h3><p>Fetch to an API and measure round-trip time.</p>
-<div class="row"><input id="endpoint" value="https://api.github.com" size="40"><button id="runCheck">Run Check</button></div>
-<pre id="netOut" class="terminal">// output</pre></div>
-<div class="card"><h3>KB: Basic Troubleshooting</h3><ul class="kblist"><li>Wi-Fi on, captive portals, VPN.</li><li>Try IP endpoint (e.g., https://1.1.1.1).</li><li>Reboot / clear cache if API calls fail.</li></ul></div>
-</section>
-</main>
-<footer><p>Built with vanilla JS, HTML, CSS. © Devashish Sharma</p></footer>
-<script src="app.js"></script>
-</body></html>
+  <header>
+    <h1>Service Desk Toolkit</h1>
+    <p>L1/L2 SOPs • Runbooks • Scripts</p>
+  </header>
+
+  <main class="layout">
+    <aside id="sidebar">
+      <input id="search" placeholder="Search..." />
+      <nav id="nav"></nav>
+    </aside>
+
+    <section id="content">
+      <article id="md"></article>
+    </section>
+  </main>
+
+  <footer>
+    <a href="README.md">README</a> •
+    <a href="https://github.com/devSharma31/service-desk-toolkit">GitHub</a> •
+    <span>MIT</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
