@@ -22,13 +22,6 @@ Front-line **Service Desk Knowledge Base** with safe automation and incident pla
 
 ---
 
-Front-line **Service Desk Knowledge Base** with safe automation and incident playbooks.  
-**Live KB:** https://devsharma31.github.io/service-desk-toolkit/
-
-> What this proves: I can **triage**, **communicate** clearly, and **automate** safely in L1/L2 environments across Windows 10/11 and Microsoft 365/Azure AD.
-
----
-
 ## Quickstart
 
 ### Run a connectivity check (PowerShell, Windows)
